@@ -1,0 +1,244 @@
+0 silly input [ 'test' ]
+1 silly flags { _: [ 'run' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   script: 'test',
+1 silly flags   args: [] }
+2 verbose rootPath /home/agory/Project/stage/lernaNoName
+3 info version 2.11.0
+4 silly existsSync /home/agory/Project/stage/lernaNoName/VERSION
+5 silly initialize attempt
+6 silly initialize success
+7 silly execute attempt
+8 silly runScriptInDir test [] noName
+9 silly getExecOpts { cwd: '/home/agory/Project/stage/lernaNoName/packages/noName' }
+10 error test Errored while running script in 'jenko'
+11 error execute callback with error
+12 error Error: Command failed: npm run test
+12 error PASS src/lib/modules/UIManager/UIManager.spec.js
+12 error PASS src/lib/controllers/Controller/Controller.spec.js
+12 error PASS src/server/SocketServer/Socket/Socket.spec.js
+12 error PASS src/web/components/Tabs/Tabs.spec.js
+12 error PASS src/web/components/ComponentView/ComponentView.spec.js
+12 error   ● Console
+12 error
+12 error     console.error node_modules/fbjs/lib/warning.js:33
+12 error       Warning: Each child in an array or iterator should have a unique "key" prop.
+12 error
+12 error       Check the top-level render call using <ComponentView>. See https://fb.me/react-warning-keys for more information.
+12 error           in p
+12 error
+12 error PASS src/web/utils/utils.spec.js
+12 error PASS src/web/widget/TreeNavigator/TreeNavigator.spec.js
+12 error PASS src/web/components/Subtitle/Subtitle.spec.js
+12 error PASS src/lib/middlewares/PurifyMiddleware/PurifyMiddleware.spec.js
+12 error PASS src/lib/connectors/WebConnector/WebConnector.spec.js
+12 error PASS src/web/console/BridgeConsole/BridgeConsole.spec.js
+12 error PASS src/web/widget/DevTools/DevTools.spec.js
+12 error PASS src/lib/models/View/View.spec.js
+12 error PASS src/web/layout/Flex/Flex.spec.js
+12 error FAIL src/lib/connectors/RNConnector/RNConnector.spec.js
+12 error   ● RNConnector › should call buffer when stream is call
+12 error
+12 error     expect(jest.fn()).toHaveBeenCalled()
+12 error
+12 error     Expected mock function to have been called.
+12 error
+12 error       31 |   it('should call buffer when stream is call', () => {
+12 error       32 |     RNConnector.stream({});
+12 error     > 33 |     expect(buffer).toHaveBeenCalled();
+12 error       34 |   });
+12 error       35 |
+12 error       36 |   it('should call emit when onData is call', () => {
+12 error
+12 error       at Object.<anonymous> (src/lib/connectors/RNConnector/RNConnector.spec.js:33:20)
+12 error
+12 error PASS src/web/components/TreeView/TreeView.spec.js
+12 error PASS src/web/components/Title/Title.spec.js
+12 error PASS src/web/console/BridgeConsole/BridgeLine/BridgeLine.spec.js
+12 error PASS src/web/components/Text/Text.spec.js
+12 error PASS src/lib/middlewares/MiddlewareContainer/MiddlewareContainer.spec.js
+12 error PASS src/lib/emitters/EmitterContainer/EmitterContainer.spec.js
+12 error PASS src/web/console/BridgeConsole/BridgeFilterForm/BridgeFilterForm.spec.js
+12 error PASS src/web/components/Console/Console.spec.js
+12 error PASS src/lib/connectors/Connector/Connector.spec.js
+12 error PASS src/lib/models/ViewContainer/ViewContainer.spec.js
+12 error PASS src/web/components/List/List.spec.js
+12 error PASS src/lib/middlewares/ConsoleMiddleware/ConsoleMiddleware.spec.js
+12 error PASS src/lib/modules/BaseModule/BaseModule.spec.js
+12 error PASS src/web/components/AppBar/AppBar.spec.js
+12 error PASS src/lib/modules/AppRegistry/AppRegistry.spec.js
+12 error PASS src/web/components/Touchable/Touchable.test.js
+12 error PASS src/web/components/AttributItemList/AttributItemList.spec.js
+12 error PASS src/lib/middlewares/ArraySplitterMiddleware/ArraySplitterMiddler.spec.js
+12 error PASS src/lib/emitters/ErrorEmitter/Error.spec.js
+12 error PASS src/lib/emitters/TreeView/TreeView.spec.js
+12 error PASS src/lib/emitters/Console/Console.spec.js
+12 error PASS src/web/components/ObjectListView/ObjectListView.spec.js
+12 error PASS src/web/components/ViewInfo/ViewInfo.spec.js
+12 error PASS src/web/components/HighlightVariableText/HighlightVariableText.spec.js
+12 error PASS src/lib/modules/ModuleContainer/ModuleContainer.spec.js
+12 error PASS src/lib/modules/SessionManager/SessionManager.spec.js
+12 error PASS src/web/components/XmlHighlight/XmlHighlight.spec.js
+12 error PASS src/web/components/Ignore/Ignore.spec.js
+12 error PASS src/lib/emitters/NotFoundEmitter/Error.spec.js
+12 error PASS src/lib/models/Response/Response.spec.js
+12 error PASS src/web/layout/Main/Main.spec.js
+12 error PASS src/lib/modules/RCTEventEmitter/RTCEventEmitter.spec.js
+12 error PASS src/web/components/Highlight/Highlight.spec.js
+12 error   ● Console
+12 error
+12 error     console.error node_modules/fbjs/lib/warning.js:33
+12 error       Warning: Failed prop type: The prop `lang` is marked as required in `Highlight`, but its value is `undefined`.
+12 error           in Highlight
+12 error     console.error node_modules/fbjs/lib/warning.js:33
+12 error       Warning: Failed prop type: The prop `children` is marked as required in `Highlight`, but its value is `undefined`.
+12 error           in Highlight
+12 error
+12 error
+12 error Summary of all failing tests
+12 error FAIL src/lib/connectors/RNConnector/RNConnector.spec.js
+12 error   ● RNConnector › should call buffer when stream is call
+12 error
+12 error     expect(jest.fn()).toHaveBeenCalled()
+12 error
+12 error     Expected mock function to have been called.
+12 error
+12 error       31 |   it('should call buffer when stream is call', () => {
+12 error       32 |     RNConnector.stream({});
+12 error     > 33 |     expect(buffer).toHaveBeenCalled();
+12 error       34 |   });
+12 error       35 |
+12 error       36 |   it('should call emit when onData is call', () => {
+12 error
+12 error       at Object.<anonymous> (src/lib/connectors/RNConnector/RNConnector.spec.js:33:20)
+12 error
+12 error
+12 error Test Suites: 1 failed, 47 passed, 48 total
+12 error Tests:       1 failed, 281 passed, 282 total
+12 error Snapshots:   0 total
+12 error Time:        10.734s
+12 error Ran all test suites.
+12 error npm ERR! code ELIFECYCLE
+12 error npm ERR! errno 1
+12 error npm ERR! jenko@0.0.1 test: `jest --coverage`
+12 error npm ERR! Exit status 1
+12 error npm ERR!
+12 error npm ERR! Failed at the jenko@0.0.1 test script.
+12 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+12 error
+12 error npm ERR! A complete log of this run can be found in:
+12 error npm ERR!     /home/agory/.npm/_logs/2018-06-11T13_17_51_801Z-debug.log
+12 error
+12 error > jenko@0.0.1 test /home/agory/Project/stage/lernaNoName/packages/noName
+12 error > jest --coverage
+12 error
+12 error ------------------------------------------------|----------|----------|----------|----------|-------------------|
+12 error File                                            |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+12 error ------------------------------------------------|----------|----------|----------|----------|-------------------|
+12 error All files                                       |      100 |      100 |      100 |      100 |                   |
+12 error  configs/setup                                  |      100 |      100 |      100 |      100 |                   |
+12 error   test.setup.js                                 |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/connectors/Connector                   |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/connectors/RNConnector                 |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/connectors/WebConnector                |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/controllers/Controller                 |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/emitters/Console                       |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/emitters/EmitterContainer              |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/emitters/ErrorEmitter                  |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/emitters/NotFoundEmitter               |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/emitters/TreeView                      |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/enum                                   |      100 |      100 |      100 |      100 |                   |
+12 error   EmitterType.js                                |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/errors/NotFoundError                   |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/middlewares/ArraySplitterMiddleware    |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/middlewares/ConsoleMiddleware          |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/middlewares/MiddlewareContainer        |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/middlewares/PurifyMiddleware           |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/models/Response                        |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/models/View                            |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/models/ViewContainer                   |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/modules/AppRegistry                    |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/modules/BaseModule                     |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/modules/ModuleContainer                |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/modules/RCTEventEmitter                |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/modules/SessionManager                 |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/lib/modules/UIManager                      |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/server/SocketServer/Socket                 |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/AppBar                      |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/AttributItemList            |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/ComponentView               |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/Console                     |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/Highlight                   |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/HighlightVariableText       |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/Ignore                      |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/List                        |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/ObjectListView              |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/Subtitle                    |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/Tabs                        |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/Text                        |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/Title                       |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/Touchable                   |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/TreeView                    |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/ViewInfo                    |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/components/XmlHighlight                |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/console/BridgeConsole                  |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/console/BridgeConsole/BridgeFilterForm |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/console/BridgeConsole/BridgeLine       |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/layout/Flex                            |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/layout/Main                            |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/utils                                  |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/widget/DevTools                        |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error  src/web/widget/TreeNavigator                   |      100 |      100 |      100 |      100 |                   |
+12 error   index.js                                      |      100 |      100 |      100 |      100 |                   |
+12 error ------------------------------------------------|----------|----------|----------|----------|-------------------|
+12 error
+12 error     at Promise.all.then.arr (/home/agory/.nvm/versions/node/v10.3.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
