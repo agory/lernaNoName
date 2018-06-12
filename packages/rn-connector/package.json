@@ -1,6 +1,6 @@
 {
   "name": "rn-noname-rn-connector",
-  "version": "0.1.4",
+  "version": "0.1.7",
   "description": "Connector react-native for rn-noname",
   "main": "index.js",
   "author": "Marvin FRACHET, Alexandre GORY",
@@ -9,7 +9,7 @@
     "build": "babel src --out-dir dist --copy-files --ignore '**/*.spec.js'"
   },
   "dependencies": {
-    "rn-noname-connector": "^0.1.4",
+    "rn-noname-connector": "^0.1.7",
     "rn-snoopy": "^2.0.2"
   },
   "peerDependencies": {
