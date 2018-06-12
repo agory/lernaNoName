@@ -1,6 +1,6 @@
 {
   "name": "rn-noname-cli",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Connector react-native for rn-noname",
   "main": "index.js",
   "author": "Marvin FRACHET, Alexandre GORY",
