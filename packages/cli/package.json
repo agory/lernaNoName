@@ -11,8 +11,5 @@
   "dependencies": {
     "commander": "^2.0.2",
     "rn-noname": "^0.1.4"
-  },
-  "peerDependencies": {
-    "react-native": "^0.49.0"
   }
 }
