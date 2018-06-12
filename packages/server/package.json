@@ -4,6 +4,7 @@
   "description": "An application for debugging React-Native App",
   "main": "index.js",
   "scripts": {
+    "build": "next build",
     "serve": "node ./src/cli/index --np",
     "test": "jest --coverage",
     "format": "prettier-eslint --write \"pages/**/*.js\" && prettier-eslint --write \"src/**/*.js\" && prettier-eslint --write \"stories/**/*.js\"",
