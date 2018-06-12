@@ -3,9 +3,6 @@
   "version": "0.1.3",
   "description": "An application for debugging React-Native App",
   "main": "index.js",
-  "bin": {
-    "noname": "./src/cli/index.js"
-  },
   "scripts": {
     "serve": "node ./src/cli/index --np",
     "test": "jest --coverage",
@@ -31,8 +28,8 @@
     "react-dom": "^16.4.0",
     "react-jss": "^8.4.0",
     "react-syntax-highlighter": "^7.0.4",
-    "rn-noname-connector": "^0.0.1",
-    "rn-noname-lib": "^0.0.1",
+    "rn-noname-connector": "^0.1.2",
+    "rn-noname-lib": "^0.1.0",
     "rn-snoopy": "^2.0.2",
     "rxjs": "^6.1.0",
     "rxjs-compat": "^6.1.0",
