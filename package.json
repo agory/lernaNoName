@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "build":"lerna run build",
-    "publish":"yarn build && lerna publish --npm-tag dev"
+    "publish":"yarn build && lerna publish --force-publish=*"
   },
   "devDependencies": {
     "lerna": "^2.11.0",
@@ -18,3 +18,5 @@
     "eslint-plugin-react": "^7.7.0"
   }
 }
+
+
