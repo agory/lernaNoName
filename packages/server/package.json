@@ -4,7 +4,7 @@
   "description": "An application for debugging React-Native App",
   "main": "index.js",
   "bin": {
-    "noName": "./src/cli/index"
+    "noname": "./src/cli/index.js"
   },
   "scripts": {
     "serve": "node ./src/cli/index --np",
