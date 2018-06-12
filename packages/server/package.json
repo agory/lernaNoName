@@ -28,7 +28,7 @@
     "react-dom": "^16.4.0",
     "react-jss": "^8.4.0",
     "react-syntax-highlighter": "^7.0.4",
-    "rn-noname-connector": "^0.1.2",
+    "rn-noname-connector": "^0.1.4",
     "rn-noname-lib": "^0.1.0",
     "rn-snoopy": "^2.0.2",
     "rxjs": "^6.1.0",

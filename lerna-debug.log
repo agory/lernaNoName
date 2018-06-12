@@ -1,0 +1,605 @@
+0 silly input []
+1 silly flags { _: [ 'bootstrap' ],
+1 silly flags   'reject-cycles': false,
+1 silly flags   rejectCycles: false,
+1 silly flags   args: [] }
+2 verbose rootPath /home/agory/Project/stage/lernaNoName
+3 info version 2.11.0
+4 silly existsSync /home/agory/Project/stage/lernaNoName/VERSION
+5 silly initialize attempt
+6 silly npmConfig { registry: undefined,
+6 silly npmConfig   npmClient: 'yarn',
+6 silly npmConfig   npmClientArgs: [ '--production', '--no-optional' ],
+6 silly npmConfig   mutex: 'network:42424' }
+7 silly initialize success
+8 silly execute attempt
+9 info Bootstrapping 5 packages
+10 info lifecycle preinstall
+11 silly runScript preinstall rn-noname-connector
+12 silly rn-noname-connector
+13 silly runScript preinstall rn-noname-lib
+14 silly rn-noname-lib
+15 silly runScript preinstall rn-noname-rn-connector
+16 silly rn-noname-rn-connector
+17 silly runScript preinstall rn-noname
+18 silly rn-noname
+19 silly runScript preinstall rn-noname-cli
+20 silly rn-noname-cli
+21 silly hasMatchingDependency rn-noname-cli rn-noname
+22 silly hasMatchingDependency rn-noname rn-noname-lib
+23 silly hasDependencyInstalled rn-noname-cli commander
+24 silly dependencyIsSatisfied [ 'commander',
+24 silly dependencyIsSatisfied   '^2.0.2',
+24 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/cli/node_modules' ]
+25 verbose dependencyIsSatisfied commander true
+26 silly hasDependencyInstalled rn-noname commander
+27 silly dependencyIsSatisfied [ 'commander',
+27 silly dependencyIsSatisfied   '^2.14.1',
+27 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+28 verbose dependencyIsSatisfied commander true
+29 silly hasDependencyInstalled rn-noname-connector @babel/core
+30 silly dependencyIsSatisfied [ '@babel/core',
+30 silly dependencyIsSatisfied   '^7.0.0-beta.49',
+30 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/connector/node_modules' ]
+31 verbose dependencyIsSatisfied @babel/core true
+32 silly hasDependencyInstalled rn-noname-lib @babel/core
+33 silly dependencyIsSatisfied [ '@babel/core',
+33 silly dependencyIsSatisfied   '^7.0.0-beta.49',
+33 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/lib/node_modules' ]
+34 verbose dependencyIsSatisfied @babel/core true
+35 silly hasDependencyInstalled rn-noname-rn-connector @babel/core
+36 silly dependencyIsSatisfied [ '@babel/core',
+36 silly dependencyIsSatisfied   '^7.0.0-beta.49',
+36 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/rn-connector/node_modules' ]
+37 verbose dependencyIsSatisfied @babel/core true
+38 silly hasDependencyInstalled rn-noname-connector babel-jest
+39 silly dependencyIsSatisfied [ 'babel-jest',
+39 silly dependencyIsSatisfied   '^22.4.3',
+39 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/connector/node_modules' ]
+40 verbose dependencyIsSatisfied babel-jest true
+41 silly hasDependencyInstalled rn-noname-lib babel-jest
+42 silly dependencyIsSatisfied [ 'babel-jest',
+42 silly dependencyIsSatisfied   '^22.4.3',
+42 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/lib/node_modules' ]
+43 verbose dependencyIsSatisfied babel-jest true
+44 silly hasDependencyInstalled rn-noname-rn-connector babel-jest
+45 silly dependencyIsSatisfied [ 'babel-jest',
+45 silly dependencyIsSatisfied   '^22.4.3',
+45 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/rn-connector/node_modules' ]
+46 verbose dependencyIsSatisfied babel-jest true
+47 silly hasDependencyInstalled rn-noname babel-jest
+48 silly dependencyIsSatisfied [ 'babel-jest',
+48 silly dependencyIsSatisfied   '^22.4.3',
+48 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+49 verbose dependencyIsSatisfied babel-jest true
+50 silly hasDependencyInstalled rn-noname-connector babel-preset-env
+51 silly dependencyIsSatisfied [ 'babel-preset-env',
+51 silly dependencyIsSatisfied   '^1.7.0',
+51 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/connector/node_modules' ]
+52 verbose dependencyIsSatisfied babel-preset-env true
+53 silly hasDependencyInstalled rn-noname-lib babel-preset-env
+54 silly dependencyIsSatisfied [ 'babel-preset-env',
+54 silly dependencyIsSatisfied   '^1.7.0',
+54 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/lib/node_modules' ]
+55 verbose dependencyIsSatisfied babel-preset-env true
+56 silly hasDependencyInstalled rn-noname-rn-connector babel-preset-env
+57 silly dependencyIsSatisfied [ 'babel-preset-env',
+57 silly dependencyIsSatisfied   '^1.7.0',
+57 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/rn-connector/node_modules' ]
+58 verbose dependencyIsSatisfied babel-preset-env true
+59 silly hasDependencyInstalled rn-noname-connector jest
+60 silly dependencyIsSatisfied [ 'jest',
+60 silly dependencyIsSatisfied   '^22.4.2',
+60 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/connector/node_modules' ]
+61 verbose dependencyIsSatisfied jest true
+62 silly hasDependencyInstalled rn-noname-lib jest
+63 silly dependencyIsSatisfied [ 'jest',
+63 silly dependencyIsSatisfied   '^22.4.2',
+63 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/lib/node_modules' ]
+64 verbose dependencyIsSatisfied jest true
+65 silly hasDependencyInstalled rn-noname-rn-connector jest
+66 silly dependencyIsSatisfied [ 'jest',
+66 silly dependencyIsSatisfied   '^22.4.2',
+66 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/rn-connector/node_modules' ]
+67 verbose dependencyIsSatisfied jest true
+68 silly hasDependencyInstalled rn-noname jest
+69 silly dependencyIsSatisfied [ 'jest',
+69 silly dependencyIsSatisfied   '^22.4.2',
+69 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+70 verbose dependencyIsSatisfied jest true
+71 silly hasDependencyInstalled rn-noname-connector rxjs
+72 silly dependencyIsSatisfied [ 'rxjs',
+72 silly dependencyIsSatisfied   '^6.1.0',
+72 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/connector/node_modules' ]
+73 verbose dependencyIsSatisfied rxjs true
+74 silly hasDependencyInstalled rn-noname rxjs
+75 silly dependencyIsSatisfied [ 'rxjs',
+75 silly dependencyIsSatisfied   '^6.1.0',
+75 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+76 verbose dependencyIsSatisfied rxjs true
+77 silly hasDependencyInstalled rn-noname-lib rxjs
+78 silly dependencyIsSatisfied [ 'rxjs',
+78 silly dependencyIsSatisfied   '^6.2.0',
+78 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/lib/node_modules' ]
+79 verbose dependencyIsSatisfied rxjs true
+80 silly hasDependencyInstalled rn-noname-connector rxjs-compat
+81 silly dependencyIsSatisfied [ 'rxjs-compat',
+81 silly dependencyIsSatisfied   '^6.1.0',
+81 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/connector/node_modules' ]
+82 verbose dependencyIsSatisfied rxjs-compat true
+83 silly hasDependencyInstalled rn-noname rxjs-compat
+84 silly dependencyIsSatisfied [ 'rxjs-compat',
+84 silly dependencyIsSatisfied   '^6.1.0',
+84 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+85 verbose dependencyIsSatisfied rxjs-compat true
+86 silly hasDependencyInstalled rn-noname-lib rxjs-compat
+87 silly dependencyIsSatisfied [ 'rxjs-compat',
+87 silly dependencyIsSatisfied   '^6.2.0',
+87 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/lib/node_modules' ]
+88 verbose dependencyIsSatisfied rxjs-compat true
+89 silly hasDependencyInstalled rn-noname-connector socket.io-client
+90 silly dependencyIsSatisfied [ 'socket.io-client',
+90 silly dependencyIsSatisfied   '^2.1.0',
+90 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/connector/node_modules' ]
+91 verbose dependencyIsSatisfied socket.io-client true
+92 silly hasDependencyInstalled rn-noname-rn-connector rn-noname-connector
+93 silly dependencyIsSatisfied [ 'rn-noname-connector',
+93 silly dependencyIsSatisfied   '^0.1.4',
+93 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/rn-connector/node_modules' ]
+94 verbose dependencyIsSatisfied rn-noname-connector false
+95 silly hasDependencyInstalled rn-noname rn-noname-connector
+96 silly dependencyIsSatisfied [ 'rn-noname-connector',
+96 silly dependencyIsSatisfied   '^0.1.4',
+96 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+97 verbose dependencyIsSatisfied rn-noname-connector false
+98 silly hasDependencyInstalled rn-noname-rn-connector rn-snoopy
+99 silly dependencyIsSatisfied [ 'rn-snoopy',
+99 silly dependencyIsSatisfied   '^2.0.2',
+99 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/rn-connector/node_modules' ]
+100 verbose dependencyIsSatisfied rn-snoopy true
+101 silly hasDependencyInstalled rn-noname rn-snoopy
+102 silly dependencyIsSatisfied [ 'rn-snoopy',
+102 silly dependencyIsSatisfied   '^2.0.2',
+102 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+103 verbose dependencyIsSatisfied rn-snoopy true
+104 silly hasDependencyInstalled rn-noname @storybook/addon-actions
+105 silly dependencyIsSatisfied [ '@storybook/addon-actions',
+105 silly dependencyIsSatisfied   '^3.3.14',
+105 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+106 verbose dependencyIsSatisfied @storybook/addon-actions true
+107 silly hasDependencyInstalled rn-noname @storybook/addon-links
+108 silly dependencyIsSatisfied [ '@storybook/addon-links',
+108 silly dependencyIsSatisfied   '^3.3.14',
+108 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+109 verbose dependencyIsSatisfied @storybook/addon-links true
+110 silly hasDependencyInstalled rn-noname @storybook/addons
+111 silly dependencyIsSatisfied [ '@storybook/addons',
+111 silly dependencyIsSatisfied   '^3.3.14',
+111 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+112 verbose dependencyIsSatisfied @storybook/addons true
+113 silly hasDependencyInstalled rn-noname @storybook/react
+114 silly dependencyIsSatisfied [ '@storybook/react',
+114 silly dependencyIsSatisfied   '^3.3.14',
+114 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+115 verbose dependencyIsSatisfied @storybook/react true
+116 silly hasDependencyInstalled rn-noname babel-core
+117 silly dependencyIsSatisfied [ 'babel-core',
+117 silly dependencyIsSatisfied   '^7.0.0-bridge.0',
+117 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+118 verbose dependencyIsSatisfied babel-core true
+119 silly hasDependencyInstalled rn-noname coveralls
+120 silly dependencyIsSatisfied [ 'coveralls',
+120 silly dependencyIsSatisfied   '^3.0.0',
+120 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+121 verbose dependencyIsSatisfied coveralls true
+122 silly hasDependencyInstalled rn-noname enzyme
+123 silly dependencyIsSatisfied [ 'enzyme',
+123 silly dependencyIsSatisfied   '^3.3.0',
+123 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+124 verbose dependencyIsSatisfied enzyme true
+125 silly hasDependencyInstalled rn-noname enzyme-adapter-react-16
+126 silly dependencyIsSatisfied [ 'enzyme-adapter-react-16',
+126 silly dependencyIsSatisfied   '^1.1.1',
+126 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+127 verbose dependencyIsSatisfied enzyme-adapter-react-16 true
+128 silly hasDependencyInstalled rn-noname webpack
+129 silly dependencyIsSatisfied [ 'webpack',
+129 silly dependencyIsSatisfied   '^3.1.0',
+129 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+130 verbose dependencyIsSatisfied webpack true
+131 silly hasDependencyInstalled rn-noname @material-ui/core
+132 silly dependencyIsSatisfied [ '@material-ui/core',
+132 silly dependencyIsSatisfied   '^1.1.0',
+132 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+133 verbose dependencyIsSatisfied @material-ui/core true
+134 silly hasDependencyInstalled rn-noname @zeit/next-css
+135 silly dependencyIsSatisfied [ '@zeit/next-css',
+135 silly dependencyIsSatisfied   '^0.1.5',
+135 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+136 verbose dependencyIsSatisfied @zeit/next-css true
+137 silly hasDependencyInstalled rn-noname express
+138 silly dependencyIsSatisfied [ 'express',
+138 silly dependencyIsSatisfied   '^4.16.2',
+138 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+139 verbose dependencyIsSatisfied express true
+140 silly hasDependencyInstalled rn-noname highlight.js
+141 silly dependencyIsSatisfied [ 'highlight.js',
+141 silly dependencyIsSatisfied   '^9.12.0',
+141 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+142 verbose dependencyIsSatisfied highlight.js true
+143 silly hasDependencyInstalled rn-noname mdi-material-ui
+144 silly dependencyIsSatisfied [ 'mdi-material-ui',
+144 silly dependencyIsSatisfied   '^5.0.0',
+144 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+145 verbose dependencyIsSatisfied mdi-material-ui true
+146 silly hasDependencyInstalled rn-noname next
+147 silly dependencyIsSatisfied [ 'next',
+147 silly dependencyIsSatisfied   '^6.0.3',
+147 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+148 verbose dependencyIsSatisfied next true
+149 silly hasDependencyInstalled rn-noname object-sizeof
+150 silly dependencyIsSatisfied [ 'object-sizeof',
+150 silly dependencyIsSatisfied   '^1.2.0',
+150 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+151 verbose dependencyIsSatisfied object-sizeof true
+152 silly hasDependencyInstalled rn-noname opn
+153 silly dependencyIsSatisfied [ 'opn',
+153 silly dependencyIsSatisfied   '^5.2.0',
+153 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+154 verbose dependencyIsSatisfied opn true
+155 silly hasDependencyInstalled rn-noname prop-types
+156 silly dependencyIsSatisfied [ 'prop-types',
+156 silly dependencyIsSatisfied   '^15.6.1',
+156 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+157 verbose dependencyIsSatisfied prop-types true
+158 silly hasDependencyInstalled rn-noname react
+159 silly dependencyIsSatisfied [ 'react',
+159 silly dependencyIsSatisfied   '^16.4.0',
+159 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+160 verbose dependencyIsSatisfied react true
+161 silly hasDependencyInstalled rn-noname react-dom
+162 silly dependencyIsSatisfied [ 'react-dom',
+162 silly dependencyIsSatisfied   '^16.4.0',
+162 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+163 verbose dependencyIsSatisfied react-dom true
+164 silly hasDependencyInstalled rn-noname react-jss
+165 silly dependencyIsSatisfied [ 'react-jss',
+165 silly dependencyIsSatisfied   '^8.4.0',
+165 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+166 verbose dependencyIsSatisfied react-jss true
+167 silly hasDependencyInstalled rn-noname react-syntax-highlighter
+168 silly dependencyIsSatisfied [ 'react-syntax-highlighter',
+168 silly dependencyIsSatisfied   '^7.0.4',
+168 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+169 verbose dependencyIsSatisfied react-syntax-highlighter true
+170 silly hasDependencyInstalled rn-noname socket.io
+171 silly dependencyIsSatisfied [ 'socket.io',
+171 silly dependencyIsSatisfied   '^2.1.0',
+171 silly dependencyIsSatisfied   '/home/agory/Project/stage/lernaNoName/packages/server/node_modules' ]
+172 verbose dependencyIsSatisfied socket.io true
+173 silly root dependencies []
+174 silly leaf dependencies {
+174 silly leaf dependencies   "rn-noname-cli": [
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "commander@^2.0.2",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     }
+174 silly leaf dependencies   ],
+174 silly leaf dependencies   "rn-noname": [
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "commander@^2.14.1",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "babel-jest@^22.4.3",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "jest@^22.4.2",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rxjs@^6.1.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rxjs-compat@^6.1.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rn-noname-connector@^0.1.4",
+174 silly leaf dependencies       "isSatisfied": false
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rn-snoopy@^2.0.2",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "@storybook/addon-actions@^3.3.14",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "@storybook/addon-links@^3.3.14",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "@storybook/addons@^3.3.14",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "@storybook/react@^3.3.14",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "babel-core@^7.0.0-bridge.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "coveralls@^3.0.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "enzyme@^3.3.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "enzyme-adapter-react-16@^1.1.1",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "webpack@^3.1.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "@material-ui/core@^1.1.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "@zeit/next-css@^0.1.5",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "express@^4.16.2",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "highlight.js@^9.12.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "mdi-material-ui@^5.0.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "next@^6.0.3",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "object-sizeof@^1.2.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "opn@^5.2.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "prop-types@^15.6.1",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "react@^16.4.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "react-dom@^16.4.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "react-jss@^8.4.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "react-syntax-highlighter@^7.0.4",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "socket.io@^2.1.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     }
+174 silly leaf dependencies   ],
+174 silly leaf dependencies   "rn-noname-connector": [
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "@babel/core@^7.0.0-beta.49",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "babel-jest@^22.4.3",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "babel-preset-env@^1.7.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "jest@^22.4.2",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rxjs@^6.1.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rxjs-compat@^6.1.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "socket.io-client@^2.1.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     }
+174 silly leaf dependencies   ],
+174 silly leaf dependencies   "rn-noname-lib": [
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "@babel/core@^7.0.0-beta.49",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "babel-jest@^22.4.3",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "babel-preset-env@^1.7.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "jest@^22.4.2",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rxjs@^6.2.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rxjs-compat@^6.2.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     }
+174 silly leaf dependencies   ],
+174 silly leaf dependencies   "rn-noname-rn-connector": [
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "@babel/core@^7.0.0-beta.49",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "babel-jest@^22.4.3",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "babel-preset-env@^1.7.0",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "jest@^22.4.2",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rn-noname-connector@^0.1.4",
+174 silly leaf dependencies       "isSatisfied": false
+174 silly leaf dependencies     },
+174 silly leaf dependencies     {
+174 silly leaf dependencies       "dependency": "rn-snoopy@^2.0.2",
+174 silly leaf dependencies       "isSatisfied": true
+174 silly leaf dependencies     }
+174 silly leaf dependencies   ]
+174 silly leaf dependencies }
+175 info Installing external dependencies
+176 verbose actions 2 actions, concurrency 4
+177 silly installInDir server [ 'commander@^2.14.1',
+177 silly installInDir   'babel-jest@^22.4.3',
+177 silly installInDir   'jest@^22.4.2',
+177 silly installInDir   'rxjs@^6.1.0',
+177 silly installInDir   'rxjs-compat@^6.1.0',
+177 silly installInDir   'rn-noname-connector@^0.1.4',
+177 silly installInDir   'rn-snoopy@^2.0.2',
+177 silly installInDir   '@storybook/addon-actions@^3.3.14',
+177 silly installInDir   '@storybook/addon-links@^3.3.14',
+177 silly installInDir   '@storybook/addons@^3.3.14',
+177 silly installInDir   '@storybook/react@^3.3.14',
+177 silly installInDir   'babel-core@^7.0.0-bridge.0',
+177 silly installInDir   'coveralls@^3.0.0',
+177 silly installInDir   'enzyme@^3.3.0',
+177 silly installInDir   'enzyme-adapter-react-16@^1.1.1',
+177 silly installInDir   'webpack@^3.1.0',
+177 silly installInDir   '@material-ui/core@^1.1.0',
+177 silly installInDir   '@zeit/next-css@^0.1.5',
+177 silly installInDir   'express@^4.16.2',
+177 silly installInDir   'highlight.js@^9.12.0',
+177 silly installInDir   'mdi-material-ui@^5.0.0',
+177 silly installInDir   'next@^6.0.3',
+177 silly installInDir   'object-sizeof@^1.2.0',
+177 silly installInDir   'opn@^5.2.0',
+177 silly installInDir   'prop-types@^15.6.1',
+177 silly installInDir   'react@^16.4.0',
+177 silly installInDir   'react-dom@^16.4.0',
+177 silly installInDir   'react-jss@^8.4.0',
+177 silly installInDir   'react-syntax-highlighter@^7.0.4',
+177 silly installInDir   'socket.io@^2.1.0' ]
+178 silly installInDir backup /home/agory/Project/stage/lernaNoName/packages/server/package.json
+179 silly rename [ '/home/agory/Project/stage/lernaNoName/packages/server/package.json',
+179 silly rename   '/home/agory/Project/stage/lernaNoName/packages/server/package.json.lerna_backup' ]
+180 silly installInDir rn-connector [ '@babel/core@^7.0.0-beta.49',
+180 silly installInDir   'babel-jest@^22.4.3',
+180 silly installInDir   'babel-preset-env@^1.7.0',
+180 silly installInDir   'jest@^22.4.2',
+180 silly installInDir   'rn-noname-connector@^0.1.4',
+180 silly installInDir   'rn-snoopy@^2.0.2' ]
+181 silly installInDir backup /home/agory/Project/stage/lernaNoName/packages/rn-connector/package.json
+182 silly rename [ '/home/agory/Project/stage/lernaNoName/packages/rn-connector/package.json',
+182 silly rename   '/home/agory/Project/stage/lernaNoName/packages/rn-connector/package.json.lerna_backup' ]
+183 silly installInDir writing tempJson { dependencies:
+183 silly installInDir    { commander: '^2.14.1',
+183 silly installInDir      'babel-jest': '^22.4.3',
+183 silly installInDir      jest: '^22.4.2',
+183 silly installInDir      rxjs: '^6.1.0',
+183 silly installInDir      'rxjs-compat': '^6.1.0',
+183 silly installInDir      'rn-noname-connector': '^0.1.4',
+183 silly installInDir      'rn-snoopy': '^2.0.2',
+183 silly installInDir      '@storybook/addon-actions': '^3.3.14',
+183 silly installInDir      '@storybook/addon-links': '^3.3.14',
+183 silly installInDir      '@storybook/addons': '^3.3.14',
+183 silly installInDir      '@storybook/react': '^3.3.14',
+183 silly installInDir      'babel-core': '^7.0.0-bridge.0',
+183 silly installInDir      coveralls: '^3.0.0',
+183 silly installInDir      enzyme: '^3.3.0',
+183 silly installInDir      'enzyme-adapter-react-16': '^1.1.1',
+183 silly installInDir      webpack: '^3.1.0',
+183 silly installInDir      '@material-ui/core': '^1.1.0',
+183 silly installInDir      '@zeit/next-css': '^0.1.5',
+183 silly installInDir      express: '^4.16.2',
+183 silly installInDir      'highlight.js': '^9.12.0',
+183 silly installInDir      'mdi-material-ui': '^5.0.0',
+183 silly installInDir      next: '^6.0.3',
+183 silly installInDir      'object-sizeof': '^1.2.0',
+183 silly installInDir      opn: '^5.2.0',
+183 silly installInDir      'prop-types': '^15.6.1',
+183 silly installInDir      react: '^16.4.0',
+183 silly installInDir      'react-dom': '^16.4.0',
+183 silly installInDir      'react-jss': '^8.4.0',
+183 silly installInDir      'react-syntax-highlighter': '^7.0.4',
+183 silly installInDir      'socket.io': '^2.1.0' } }
+184 silly installInDir writing tempJson { dependencies:
+184 silly installInDir    { '@babel/core': '^7.0.0-beta.49',
+184 silly installInDir      'babel-jest': '^22.4.3',
+184 silly installInDir      'babel-preset-env': '^1.7.0',
+184 silly installInDir      jest: '^22.4.2',
+184 silly installInDir      'rn-noname-connector': '^0.1.4',
+184 silly installInDir      'rn-snoopy': '^2.0.2' } }
+185 silly getExecOpts { cwd: '/home/agory/Project/stage/lernaNoName/packages/server' }
+186 silly installInDir [ 'yarn',
+186 silly installInDir   [ 'install',
+186 silly installInDir     '--mutex',
+186 silly installInDir     'network:42424',
+186 silly installInDir     '--non-interactive',
+186 silly installInDir     '--production',
+186 silly installInDir     '--no-optional' ] ]
+187 silly getExecOpts { cwd:
+187 silly getExecOpts    '/home/agory/Project/stage/lernaNoName/packages/rn-connector' }
+188 silly installInDir [ 'yarn',
+188 silly installInDir   [ 'install',
+188 silly installInDir     '--mutex',
+188 silly installInDir     'network:42424',
+188 silly installInDir     '--non-interactive',
+188 silly installInDir     '--production',
+188 silly installInDir     '--no-optional' ] ]
+189 silly installInDir cleanup /home/agory/Project/stage/lernaNoName/packages/server/package.json
+190 silly renameSync [ '/home/agory/Project/stage/lernaNoName/packages/server/package.json.lerna_backup',
+190 silly renameSync   '/home/agory/Project/stage/lernaNoName/packages/server/package.json' ]
+191 verbose installed leaf rn-noname
+192 error execute callback with error
+193 error Error: Command failed: yarn install --mutex network:42424 --non-interactive --production --no-optional
+193 error warning package.json: No license field
+193 error warning No license field
+193 error error Couldn't find any versions for "rn-noname-connector" that matches "^0.1.4"
+193 error yarn install v1.7.0
+193 error [1/4] Resolving packages...
+193 error info Visit https://yarnpkg.com/en/docs/cli/install for documentation about this command.
+193 error
+193 error     at Promise.all.then.arr (/home/agory/.nvm/versions/node/v10.3.0/lib/node_modules/lerna/node_modules/execa/index.js:236:11)
