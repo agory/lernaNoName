@@ -1,13 +1,13 @@
 {
   "name": "rn-noname",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Connector react-native for rn-noname",
   "main": "index.js",
   "author": "Marvin FRACHET, Alexandre GORY",
   "license": "MIT",
   "scripts": {
     "build":"lerna run build",
-    "publish":"yarn build && lerna publish --force-publish=*"
+    "publish":"yarn build && lerna publish"
   },
   "devDependencies": {
     "lerna": "^2.11.0",

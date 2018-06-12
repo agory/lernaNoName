@@ -6,7 +6,7 @@
   "author": "Marvin FRACHET, Alexandre GORY",
   "license": "MIT",
   "scripts": {
-    "build": "babel src --out-dir dist --copy-files"
+    "build": "babel src --out-dir dist --copy-files --ignore '**/*.spec.js'"
   },
   "dependencies": {
     "rn-noname-connector": "^0.0.1",
