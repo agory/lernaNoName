@@ -3,13 +3,12 @@ const express = require('express');
 const next = require('next');
 const open = require('opn');
 const http = require('http');
-const { Controller,ModuleContainer,EmitterContainer,MiddlewareContainer } = require('rn-noname-lib');
+const {
+  Controller, ModuleContainer, EmitterContainer, MiddlewareContainer,
+} = require('rn-noname-lib');
 const SocketServer = require('./SocketServer/index');
 
-
-const DEV = process.env.NODE_ENV !== 'production';
-
-const startServer = async (port,noPage) => {
+const startServer = async (port, noPage, dev = true) => {
   const SERVER_ADRESS = `http://localhost:${port}`;
   const serverHandler = (err) => {
     if (err) throw err;
@@ -20,7 +19,7 @@ const startServer = async (port,noPage) => {
   try {
     const app = express();
     const server = http.Server(app);
-    const nextjs = next({ dev: DEV });
+    const nextjs = next({ dev: dev });
     const handle = nextjs.getRequestHandler();
     const socketServer = new SocketServer(server);
     const moduleContainer = new ModuleContainer();

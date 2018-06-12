@@ -2,8 +2,8 @@
  * CLI goes here
  */
 const program = require('commander');
-const packageInfo = require('../../package');
-const startServer = require('../server/httpServer');
+const packageInfo = require('./package');
+const startServer = require('rn-noname/src/server/httpServer');
 
 program
   .version(packageInfo.version)
@@ -12,4 +12,4 @@ program
   .option('--np', 'don\'t open the application on navigator', false)
   .parse(process.argv);
 
-startServer(program.port, program.np);
+startServer(program.port, program.np, false);
