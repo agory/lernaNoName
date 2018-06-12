@@ -1,5 +1,20 @@
 {
-	"devDependencies": {
-		"lerna": "^2.11.0"
-	}
+  "name": "rn-noname-connector",
+  "version": "0.1.0",
+  "description": "Connector react-native for rn-noname",
+  "main": "index.js",
+  "author": "Marvin FRACHET, Alexandre GORY",
+  "license": "MIT",
+  "scripts": {
+    "build":"lerna run build",
+    "publish":"yarn build &&"
+  },
+  "devDependencies": {
+    "lerna": "^2.11.0",
+    "eslint": "^4.18.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0"
+  }
 }
