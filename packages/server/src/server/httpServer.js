@@ -5,7 +5,7 @@ const open = require('opn');
 const http = require('http');
 const path = require('path');
 const fs = require('fs');
-const config = require('../../next.config');
+
 const {
   Controller, ModuleContainer, EmitterContainer, MiddlewareContainer,
 } = require('rn-noname-lib');
@@ -30,7 +30,7 @@ const startServer = async (port, noPage, dev = true) => {
   try {
     const app = express();
     const server = http.Server(app);
-    const nextjs = next({ dev, dir: root, conf: config });
+    const nextjs = next({ dev, dir: root });
     const handle = nextjs.getRequestHandler();
     const socketServer = new SocketServer(server);
     const moduleContainer = new ModuleContainer();

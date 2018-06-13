@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 10);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -86,47 +86,59 @@ module.exports = require("prop-types");
 /* 2 */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Typography");
+module.exports = require("@material-ui/core/styles");
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = require("rn-noname-connector/dist/WebConnector");
+module.exports = require("@material-ui/core/Typography");
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = {"COLOR":["inherit","primary","textSecondary","secondary","error","default"],"COLOR_DEFAULT":"default"}
+module.exports = require("rn-noname-connector/dist/WebConnector");
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Paper");
+module.exports = require("react-jss/lib/JssProvider");
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/ListItem");
+module.exports = {"COLOR":["inherit","primary","textSecondary","secondary","error","default"],"COLOR_DEFAULT":"default"}
 
 /***/ }),
 /* 7 */
 /***/ (function(module, exports) {
 
-module.exports = require("mdi-material-ui");
+module.exports = require("@material-ui/core/Paper");
 
 /***/ }),
 /* 8 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__(9);
-
+module.exports = require("@material-ui/core/ListItem");
 
 /***/ }),
 /* 9 */
+/***/ (function(module, exports) {
+
+module.exports = require("mdi-material-ui");
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(11);
+
+
+/***/ }),
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -137,7 +149,7 @@ var external__react_ = __webpack_require__(0);
 var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
 
 // EXTERNAL MODULE: external "rn-noname-connector/dist/WebConnector"
-var WebConnector_ = __webpack_require__(3);
+var WebConnector_ = __webpack_require__(4);
 var WebConnector__default = /*#__PURE__*/__webpack_require__.n(WebConnector_);
 
 // EXTERNAL MODULE: external "prop-types"
@@ -145,23 +157,31 @@ var external__prop_types_ = __webpack_require__(1);
 var external__prop_types__default = /*#__PURE__*/__webpack_require__.n(external__prop_types_);
 
 // EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__(10);
+var head_ = __webpack_require__(12);
 var head__default = /*#__PURE__*/__webpack_require__.n(head_);
 
+// EXTERNAL MODULE: external "react-jss/lib/JssProvider"
+var JssProvider_ = __webpack_require__(5);
+var JssProvider__default = /*#__PURE__*/__webpack_require__.n(JssProvider_);
+
+// EXTERNAL MODULE: external "@material-ui/core/styles"
+var styles_ = __webpack_require__(2);
+var styles__default = /*#__PURE__*/__webpack_require__.n(styles_);
+
 // EXTERNAL MODULE: external "@material-ui/core/AppBar"
-var AppBar_ = __webpack_require__(11);
+var AppBar_ = __webpack_require__(13);
 var AppBar__default = /*#__PURE__*/__webpack_require__.n(AppBar_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Toolbar"
-var Toolbar_ = __webpack_require__(12);
+var Toolbar_ = __webpack_require__(14);
 var Toolbar__default = /*#__PURE__*/__webpack_require__.n(Toolbar_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Typography"
-var Typography_ = __webpack_require__(2);
+var Typography_ = __webpack_require__(3);
 var Typography__default = /*#__PURE__*/__webpack_require__.n(Typography_);
 
 // EXTERNAL MODULE: ./src/web/constant.json
-var constant = __webpack_require__(4);
+var constant = __webpack_require__(6);
 var constant_default = /*#__PURE__*/__webpack_require__.n(constant);
 
 // CONCATENATED MODULE: ./src/web/components/Title/index.js
@@ -214,20 +234,16 @@ var AppBar_AppBar = function AppBar(_ref) {
 
 /* harmony default export */ var components_AppBar = (AppBar_AppBar);
 // EXTERNAL MODULE: external "@material-ui/core/Paper"
-var Paper_ = __webpack_require__(5);
+var Paper_ = __webpack_require__(7);
 var Paper__default = /*#__PURE__*/__webpack_require__.n(Paper_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Tabs"
-var Tabs_ = __webpack_require__(13);
+var Tabs_ = __webpack_require__(15);
 var Tabs__default = /*#__PURE__*/__webpack_require__.n(Tabs_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Tab"
-var Tab_ = __webpack_require__(14);
+var Tab_ = __webpack_require__(16);
 var Tab__default = /*#__PURE__*/__webpack_require__.n(Tab_);
-
-// EXTERNAL MODULE: external "@material-ui/core/styles"
-var styles_ = __webpack_require__(15);
-var styles__default = /*#__PURE__*/__webpack_require__.n(styles_);
 
 // CONCATENATED MODULE: ./src/web/components/Tabs/index.js
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
@@ -360,7 +376,7 @@ Tabs_Tabs.defaultProps = {
 };
 /* harmony default export */ var components_Tabs = (Object(styles_["withStyles"])(styles)(Tabs_Tabs));
 // EXTERNAL MODULE: external "@material-ui/core/List"
-var List_ = __webpack_require__(16);
+var List_ = __webpack_require__(17);
 var List__default = /*#__PURE__*/__webpack_require__.n(List_);
 
 // CONCATENATED MODULE: ./src/web/components/List/index.js
@@ -419,27 +435,27 @@ Console_Console.defaultProps = {
 };
 /* harmony default export */ var components_Console = (Console_Console);
 // EXTERNAL MODULE: external "@material-ui/core/ListItem"
-var ListItem_ = __webpack_require__(6);
+var ListItem_ = __webpack_require__(8);
 var ListItem__default = /*#__PURE__*/__webpack_require__.n(ListItem_);
 
 // EXTERNAL MODULE: external "@material-ui/core/ListItemText"
-var ListItemText_ = __webpack_require__(17);
+var ListItemText_ = __webpack_require__(18);
 var ListItemText__default = /*#__PURE__*/__webpack_require__.n(ListItemText_);
 
 // EXTERNAL MODULE: external "@material-ui/core/ListItemIcon"
-var ListItemIcon_ = __webpack_require__(18);
+var ListItemIcon_ = __webpack_require__(19);
 var ListItemIcon__default = /*#__PURE__*/__webpack_require__.n(ListItemIcon_);
 
 // EXTERNAL MODULE: external "@material-ui/core/ListItemSecondaryAction"
-var ListItemSecondaryAction_ = __webpack_require__(19);
+var ListItemSecondaryAction_ = __webpack_require__(20);
 var ListItemSecondaryAction__default = /*#__PURE__*/__webpack_require__.n(ListItemSecondaryAction_);
 
 // EXTERNAL MODULE: external "mdi-material-ui"
-var external__mdi_material_ui_ = __webpack_require__(7);
+var external__mdi_material_ui_ = __webpack_require__(9);
 var external__mdi_material_ui__default = /*#__PURE__*/__webpack_require__.n(external__mdi_material_ui_);
 
 // EXTERNAL MODULE: external "react-syntax-highlighter"
-var external__react_syntax_highlighter_ = __webpack_require__(20);
+var external__react_syntax_highlighter_ = __webpack_require__(21);
 var external__react_syntax_highlighter__default = /*#__PURE__*/__webpack_require__.n(external__react_syntax_highlighter_);
 
 // CONCATENATED MODULE: ./src/web/components/Text/index.js
@@ -584,11 +600,11 @@ var BridgeLine_BridgeLine = function BridgeLine(_ref) {
 
 /* harmony default export */ var BridgeConsole_BridgeLine = (BridgeLine_BridgeLine);
 // EXTERNAL MODULE: external "@material-ui/core/TextField"
-var TextField_ = __webpack_require__(21);
+var TextField_ = __webpack_require__(22);
 var TextField__default = /*#__PURE__*/__webpack_require__.n(TextField_);
 
 // EXTERNAL MODULE: external "@material-ui/core/FormControl"
-var FormControl_ = __webpack_require__(22);
+var FormControl_ = __webpack_require__(23);
 var FormControl__default = /*#__PURE__*/__webpack_require__.n(FormControl_);
 
 // CONCATENATED MODULE: ./src/web/console/BridgeConsole/BridgeFilterForm/index.js
@@ -916,10 +932,17 @@ Flex_Flex.defaultProps = {
 
 
 
+
+var generateClassName = Object(styles_["createGenerateClassName"])({
+  dangerouslyUseGlobalCSS: true
+});
+
 var Main_Main = function Main(_ref) {
   var children = _ref.children,
       title = _ref.title;
-  return external__react__default.a.createElement("div", null, external__react__default.a.createElement(head__default.a, null, external__react__default.a.createElement("title", null, title), external__react__default.a.createElement("meta", {
+  return external__react__default.a.createElement(JssProvider__default.a, {
+    generateClassName: generateClassName
+  }, external__react__default.a.createElement("div", null, external__react__default.a.createElement(head__default.a, null, external__react__default.a.createElement("title", null, title), external__react__default.a.createElement("meta", {
     name: "viewport",
     content: "initial-scale=1.0, width=device-width",
     key: "viewport"
@@ -945,7 +968,7 @@ var Main_Main = function Main(_ref) {
       title: title
     }),
     footer: external__react__default.a.createElement(widget_DevTools, null)
-  }, children));
+  }, children)));
 };
 
 /* harmony default export */ var layout_Main = (Main_Main);
@@ -1205,19 +1228,19 @@ TreeView_TreeView.defaultProps = {
 };
 /* harmony default export */ var components_TreeView = (TreeView_TreeView);
 // EXTERNAL MODULE: external "@material-ui/core/Card"
-var Card_ = __webpack_require__(23);
+var Card_ = __webpack_require__(24);
 var Card__default = /*#__PURE__*/__webpack_require__.n(Card_);
 
 // EXTERNAL MODULE: external "@material-ui/core/CardHeader"
-var CardHeader_ = __webpack_require__(24);
+var CardHeader_ = __webpack_require__(25);
 var CardHeader__default = /*#__PURE__*/__webpack_require__.n(CardHeader_);
 
 // EXTERNAL MODULE: external "@material-ui/core/CardContent"
-var CardContent_ = __webpack_require__(25);
+var CardContent_ = __webpack_require__(26);
 var CardContent__default = /*#__PURE__*/__webpack_require__.n(CardContent_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Divider"
-var Divider_ = __webpack_require__(26);
+var Divider_ = __webpack_require__(27);
 var Divider__default = /*#__PURE__*/__webpack_require__.n(Divider_);
 
 // CONCATENATED MODULE: ./src/web/components/Subtitle/index.js
@@ -1355,7 +1378,7 @@ var ViewInfo_ViewInfo = function ViewInfo(_ref) {
 
 /* harmony default export */ var components_ViewInfo = (ViewInfo_ViewInfo);
 // EXTERNAL MODULE: external "@material-ui/core/Grid"
-var Grid_ = __webpack_require__(27);
+var Grid_ = __webpack_require__(28);
 var Grid__default = /*#__PURE__*/__webpack_require__.n(Grid_);
 
 // CONCATENATED MODULE: ./src/web/widget/TreeNavigator/index.js
@@ -1458,6 +1481,151 @@ function (_Component) {
 }(external__react_["Component"]);
 
 /* harmony default export */ var widget_TreeNavigator = (TreeNavigator_TreeNavigator);
+// EXTERNAL MODULE: external "@material-ui/core/CssBaseline"
+var CssBaseline_ = __webpack_require__(29);
+var CssBaseline__default = /*#__PURE__*/__webpack_require__.n(CssBaseline_);
+
+// EXTERNAL MODULE: external "jss"
+var external__jss_ = __webpack_require__(30);
+var external__jss__default = /*#__PURE__*/__webpack_require__.n(external__jss_);
+
+// EXTERNAL MODULE: external "@material-ui/core/colors/purple"
+var purple_ = __webpack_require__(31);
+var purple__default = /*#__PURE__*/__webpack_require__.n(purple_);
+
+// EXTERNAL MODULE: external "@material-ui/core/colors/green"
+var green_ = __webpack_require__(32);
+var green__default = /*#__PURE__*/__webpack_require__.n(green_);
+
+// CONCATENATED MODULE: ./src/web/material-utils/getPageContext.js
+
+
+
+ // A theme with custom primary and secondary color.
+// It's optional.
+
+var theme = Object(styles_["createMuiTheme"])({
+  palette: {
+    primary: {
+      light: purple__default.a[300],
+      main: purple__default.a[500],
+      dark: purple__default.a[700]
+    },
+    secondary: {
+      light: green__default.a[300],
+      main: green__default.a[500],
+      dark: green__default.a[700]
+    }
+  }
+});
+
+function createPageContext() {
+  return {
+    theme: theme,
+    // This is needed in order to deduplicate the injection of CSS in the page.
+    sheetsManager: new Map(),
+    // This is needed in order to inject the critical CSS.
+    sheetsRegistry: new external__jss_["SheetsRegistry"](),
+    // The standard class name generator.
+    generateClassName: Object(styles_["createGenerateClassName"])()
+  };
+}
+
+function getPageContext() {
+  // Make sure to create a new context for every server-side request so that data
+  // isn't shared between connections (which would be bad).
+  if (!process.browser) {
+    return createPageContext();
+  } // Reuse context on the client-side.
+
+
+  if (!global.__INIT_MATERIAL_UI__) {
+    global.__INIT_MATERIAL_UI__ = createPageContext();
+  }
+
+  return global.__INIT_MATERIAL_UI__;
+}
+// CONCATENATED MODULE: ./src/web/material-utils/withRoot.js
+function withRoot__typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { withRoot__typeof = function _typeof(obj) { return typeof obj; }; } else { withRoot__typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return withRoot__typeof(obj); }
+
+function withRoot__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function withRoot__defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function withRoot__createClass(Constructor, protoProps, staticProps) { if (protoProps) withRoot__defineProperties(Constructor.prototype, protoProps); if (staticProps) withRoot__defineProperties(Constructor, staticProps); return Constructor; }
+
+function withRoot__possibleConstructorReturn(self, call) { if (call && (withRoot__typeof(call) === "object" || typeof call === "function")) { return call; } return withRoot__assertThisInitialized(self); }
+
+function withRoot__assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function withRoot__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+
+
+
+var withRoot_generateClassName = Object(styles_["createGenerateClassName"])({
+  dangerouslyUseGlobalCSS: true,
+  productionPrefix: 'c'
+});
+
+function withRoot(Component) {
+  var WithRoot =
+  /*#__PURE__*/
+  function (_React$Component) {
+    withRoot__inherits(WithRoot, _React$Component);
+
+    function WithRoot(props) {
+      var _this;
+
+      withRoot__classCallCheck(this, WithRoot);
+
+      _this = withRoot__possibleConstructorReturn(this, (WithRoot.__proto__ || Object.getPrototypeOf(WithRoot)).call(this, props));
+      _this.pageContext = _this.props.pageContext || getPageContext();
+      console.log(_this.pageContext);
+      return _this;
+    }
+
+    withRoot__createClass(WithRoot, [{
+      key: "componentDidMount",
+      value: function componentDidMount() {
+        // Remove the server-side injected CSS.
+        var jssStyles = document.querySelector('#jss-server-side');
+
+        if (jssStyles && jssStyles.parentNode) {
+          jssStyles.parentNode.removeChild(jssStyles);
+        }
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        // MuiThemeProvider makes the theme available down the React tree thanks to React context.
+        return external__react__default.a.createElement(JssProvider__default.a, {
+          generateClassName: withRoot_generateClassName
+        }, external__react__default.a.createElement(styles_["MuiThemeProvider"], {
+          theme: this.pageContext.theme,
+          sheetsManager: this.pageContext.sheetsManager
+        }, external__react__default.a.createElement(CssBaseline__default.a, null), external__react__default.a.createElement(Component, this.props)));
+      }
+    }]);
+
+    return WithRoot;
+  }(external__react__default.a.Component);
+
+  WithRoot.getInitialProps = function (ctx) {
+    if (Component.getInitialProps) {
+      return Component.getInitialProps(ctx);
+    }
+
+    return {};
+  };
+
+  return WithRoot;
+}
+
+/* harmony default export */ var material_utils_withRoot = (withRoot);
 // CONCATENATED MODULE: ./pages/index.js
 function pages__typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { pages__typeof = function _typeof(obj) { return typeof obj; }; } else { pages__typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return pages__typeof(obj); }
 
@@ -1472,6 +1640,7 @@ function pages__possibleConstructorReturn(self, call) { if (call && (pages__type
 function pages__inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 function pages__assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 
 
 
@@ -1532,112 +1701,130 @@ function (_Component) {
 /* harmony default export */ var pages = __webpack_exports__["default"] = (pages_index);
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/AppBar");
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Toolbar");
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Tabs");
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Tab");
 
 /***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-module.exports = require("@material-ui/core/styles");
-
-/***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/List");
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/ListItemText");
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/ListItemIcon");
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/ListItemSecondaryAction");
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-syntax-highlighter");
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/TextField");
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/FormControl");
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Card");
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/CardHeader");
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/CardContent");
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Divider");
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Grid");
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/CssBaseline");
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = require("jss");
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/colors/purple");
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+module.exports = require("@material-ui/core/colors/green");
 
 /***/ })
 /******/ ]);

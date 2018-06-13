@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import WebConnector from 'rn-noname-connector/dist/WebConnector';
 import Main from '../src/web/layout/Main';
 import TreeNavigator from '../src/web/widget/TreeNavigator';
+import withRoot from '../src/web/material-utils/withRoot';
 
 
 class index extends Component {
