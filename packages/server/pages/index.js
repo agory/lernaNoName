@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WebConnector from 'rn-noname-connector/build/WebConnector';
+import WebConnector from 'rn-noname-connector/dist/WebConnector';
 import Main from '../src/web/layout/Main';
 import TreeNavigator from '../src/web/widget/TreeNavigator';
 

@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 8);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -92,35 +92,41 @@ module.exports = require("@material-ui/core/Typography");
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = {"COLOR":["inherit","primary","textSecondary","secondary","error","default"],"COLOR_DEFAULT":"default"}
+module.exports = require("rn-noname-connector/dist/WebConnector");
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/Paper");
+module.exports = {"COLOR":["inherit","primary","textSecondary","secondary","error","default"],"COLOR_DEFAULT":"default"}
 
 /***/ }),
 /* 5 */
 /***/ (function(module, exports) {
 
-module.exports = require("@material-ui/core/ListItem");
+module.exports = require("@material-ui/core/Paper");
 
 /***/ }),
 /* 6 */
 /***/ (function(module, exports) {
 
-module.exports = require("mdi-material-ui");
+module.exports = require("@material-ui/core/ListItem");
 
 /***/ }),
 /* 7 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__(8);
-
+module.exports = require("mdi-material-ui");
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(9);
+
+
+/***/ }),
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -130,20 +136,24 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 var external__react_ = __webpack_require__(0);
 var external__react__default = /*#__PURE__*/__webpack_require__.n(external__react_);
 
+// EXTERNAL MODULE: external "rn-noname-connector/dist/WebConnector"
+var WebConnector_ = __webpack_require__(3);
+var WebConnector__default = /*#__PURE__*/__webpack_require__.n(WebConnector_);
+
 // EXTERNAL MODULE: external "prop-types"
 var external__prop_types_ = __webpack_require__(1);
 var external__prop_types__default = /*#__PURE__*/__webpack_require__.n(external__prop_types_);
 
 // EXTERNAL MODULE: external "next/head"
-var head_ = __webpack_require__(9);
+var head_ = __webpack_require__(10);
 var head__default = /*#__PURE__*/__webpack_require__.n(head_);
 
 // EXTERNAL MODULE: external "@material-ui/core/AppBar"
-var AppBar_ = __webpack_require__(10);
+var AppBar_ = __webpack_require__(11);
 var AppBar__default = /*#__PURE__*/__webpack_require__.n(AppBar_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Toolbar"
-var Toolbar_ = __webpack_require__(11);
+var Toolbar_ = __webpack_require__(12);
 var Toolbar__default = /*#__PURE__*/__webpack_require__.n(Toolbar_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Typography"
@@ -151,7 +161,7 @@ var Typography_ = __webpack_require__(2);
 var Typography__default = /*#__PURE__*/__webpack_require__.n(Typography_);
 
 // EXTERNAL MODULE: ./src/web/constant.json
-var constant = __webpack_require__(3);
+var constant = __webpack_require__(4);
 var constant_default = /*#__PURE__*/__webpack_require__.n(constant);
 
 // CONCATENATED MODULE: ./src/web/components/Title/index.js
@@ -204,19 +214,19 @@ var AppBar_AppBar = function AppBar(_ref) {
 
 /* harmony default export */ var components_AppBar = (AppBar_AppBar);
 // EXTERNAL MODULE: external "@material-ui/core/Paper"
-var Paper_ = __webpack_require__(4);
+var Paper_ = __webpack_require__(5);
 var Paper__default = /*#__PURE__*/__webpack_require__.n(Paper_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Tabs"
-var Tabs_ = __webpack_require__(12);
+var Tabs_ = __webpack_require__(13);
 var Tabs__default = /*#__PURE__*/__webpack_require__.n(Tabs_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Tab"
-var Tab_ = __webpack_require__(13);
+var Tab_ = __webpack_require__(14);
 var Tab__default = /*#__PURE__*/__webpack_require__.n(Tab_);
 
 // EXTERNAL MODULE: external "@material-ui/core/styles"
-var styles_ = __webpack_require__(14);
+var styles_ = __webpack_require__(15);
 var styles__default = /*#__PURE__*/__webpack_require__.n(styles_);
 
 // CONCATENATED MODULE: ./src/web/components/Tabs/index.js
@@ -350,7 +360,7 @@ Tabs_Tabs.defaultProps = {
 };
 /* harmony default export */ var components_Tabs = (Object(styles_["withStyles"])(styles)(Tabs_Tabs));
 // EXTERNAL MODULE: external "@material-ui/core/List"
-var List_ = __webpack_require__(15);
+var List_ = __webpack_require__(16);
 var List__default = /*#__PURE__*/__webpack_require__.n(List_);
 
 // CONCATENATED MODULE: ./src/web/components/List/index.js
@@ -409,27 +419,27 @@ Console_Console.defaultProps = {
 };
 /* harmony default export */ var components_Console = (Console_Console);
 // EXTERNAL MODULE: external "@material-ui/core/ListItem"
-var ListItem_ = __webpack_require__(5);
+var ListItem_ = __webpack_require__(6);
 var ListItem__default = /*#__PURE__*/__webpack_require__.n(ListItem_);
 
 // EXTERNAL MODULE: external "@material-ui/core/ListItemText"
-var ListItemText_ = __webpack_require__(16);
+var ListItemText_ = __webpack_require__(17);
 var ListItemText__default = /*#__PURE__*/__webpack_require__.n(ListItemText_);
 
 // EXTERNAL MODULE: external "@material-ui/core/ListItemIcon"
-var ListItemIcon_ = __webpack_require__(17);
+var ListItemIcon_ = __webpack_require__(18);
 var ListItemIcon__default = /*#__PURE__*/__webpack_require__.n(ListItemIcon_);
 
 // EXTERNAL MODULE: external "@material-ui/core/ListItemSecondaryAction"
-var ListItemSecondaryAction_ = __webpack_require__(18);
+var ListItemSecondaryAction_ = __webpack_require__(19);
 var ListItemSecondaryAction__default = /*#__PURE__*/__webpack_require__.n(ListItemSecondaryAction_);
 
 // EXTERNAL MODULE: external "mdi-material-ui"
-var external__mdi_material_ui_ = __webpack_require__(6);
+var external__mdi_material_ui_ = __webpack_require__(7);
 var external__mdi_material_ui__default = /*#__PURE__*/__webpack_require__.n(external__mdi_material_ui_);
 
 // EXTERNAL MODULE: external "react-syntax-highlighter"
-var external__react_syntax_highlighter_ = __webpack_require__(19);
+var external__react_syntax_highlighter_ = __webpack_require__(20);
 var external__react_syntax_highlighter__default = /*#__PURE__*/__webpack_require__.n(external__react_syntax_highlighter_);
 
 // CONCATENATED MODULE: ./src/web/components/Text/index.js
@@ -574,11 +584,11 @@ var BridgeLine_BridgeLine = function BridgeLine(_ref) {
 
 /* harmony default export */ var BridgeConsole_BridgeLine = (BridgeLine_BridgeLine);
 // EXTERNAL MODULE: external "@material-ui/core/TextField"
-var TextField_ = __webpack_require__(20);
+var TextField_ = __webpack_require__(21);
 var TextField__default = /*#__PURE__*/__webpack_require__.n(TextField_);
 
 // EXTERNAL MODULE: external "@material-ui/core/FormControl"
-var FormControl_ = __webpack_require__(21);
+var FormControl_ = __webpack_require__(22);
 var FormControl__default = /*#__PURE__*/__webpack_require__.n(FormControl_);
 
 // CONCATENATED MODULE: ./src/web/console/BridgeConsole/BridgeFilterForm/index.js
@@ -726,7 +736,6 @@ function (_Component) {
 
 /* harmony default export */ var console_BridgeConsole = (BridgeConsole_BridgeConsole);
 // CONCATENATED MODULE: ./src/web/widget/DevTools/index.js
-throw new Error("Cannot find module \"rn-noname-connector/build/WebConnector\"");
 function DevTools__typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { DevTools__typeof = function _typeof(obj) { return typeof obj; }; } else { DevTools__typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return DevTools__typeof(obj); }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
@@ -803,7 +812,7 @@ function (_Component) {
   DevTools__createClass(DevTools, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      this.connector = new __WEBPACK_IMPORTED_MODULE_2_rn_noname_connector_build_WebConnector___default.a({});
+      this.connector = new WebConnector__default.a({});
       this.subscription = this.connector.getConsole().filter(DevTools.noEmpty).map(this.handleData).subscribe(this.updateData);
     }
   }, {
@@ -1196,19 +1205,19 @@ TreeView_TreeView.defaultProps = {
 };
 /* harmony default export */ var components_TreeView = (TreeView_TreeView);
 // EXTERNAL MODULE: external "@material-ui/core/Card"
-var Card_ = __webpack_require__(22);
+var Card_ = __webpack_require__(23);
 var Card__default = /*#__PURE__*/__webpack_require__.n(Card_);
 
 // EXTERNAL MODULE: external "@material-ui/core/CardHeader"
-var CardHeader_ = __webpack_require__(23);
+var CardHeader_ = __webpack_require__(24);
 var CardHeader__default = /*#__PURE__*/__webpack_require__.n(CardHeader_);
 
 // EXTERNAL MODULE: external "@material-ui/core/CardContent"
-var CardContent_ = __webpack_require__(24);
+var CardContent_ = __webpack_require__(25);
 var CardContent__default = /*#__PURE__*/__webpack_require__.n(CardContent_);
 
 // EXTERNAL MODULE: external "@material-ui/core/Divider"
-var Divider_ = __webpack_require__(25);
+var Divider_ = __webpack_require__(26);
 var Divider__default = /*#__PURE__*/__webpack_require__.n(Divider_);
 
 // CONCATENATED MODULE: ./src/web/components/Subtitle/index.js
@@ -1346,7 +1355,7 @@ var ViewInfo_ViewInfo = function ViewInfo(_ref) {
 
 /* harmony default export */ var components_ViewInfo = (ViewInfo_ViewInfo);
 // EXTERNAL MODULE: external "@material-ui/core/Grid"
-var Grid_ = __webpack_require__(26);
+var Grid_ = __webpack_require__(27);
 var Grid__default = /*#__PURE__*/__webpack_require__.n(Grid_);
 
 // CONCATENATED MODULE: ./src/web/widget/TreeNavigator/index.js
@@ -1450,7 +1459,6 @@ function (_Component) {
 
 /* harmony default export */ var widget_TreeNavigator = (TreeNavigator_TreeNavigator);
 // CONCATENATED MODULE: ./pages/index.js
-throw new Error("Cannot find module \"rn-noname-connector/build/WebConnector\"");
 function pages__typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { pages__typeof = function _typeof(obj) { return typeof obj; }; } else { pages__typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return pages__typeof(obj); }
 
 function pages__classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -1491,7 +1499,7 @@ function (_Component) {
   pages__createClass(index, [{
     key: "componentDidMount",
     value: function componentDidMount() {
-      var connector = new __WEBPACK_IMPORTED_MODULE_1_rn_noname_connector_build_WebConnector___default.a({});
+      var connector = new WebConnector__default.a({});
       this.subscription = connector.getTreeView().subscribe(this.updateTreeView);
     }
   }, {
@@ -1524,109 +1532,109 @@ function (_Component) {
 /* harmony default export */ var pages = __webpack_exports__["default"] = (pages_index);
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/AppBar");
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Toolbar");
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Tabs");
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Tab");
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/styles");
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/List");
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/ListItemText");
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/ListItemIcon");
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/ListItemSecondaryAction");
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports) {
 
 module.exports = require("react-syntax-highlighter");
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/TextField");
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/FormControl");
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Card");
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/CardHeader");
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/CardContent");
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Divider");
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports) {
 
 module.exports = require("@material-ui/core/Grid");
