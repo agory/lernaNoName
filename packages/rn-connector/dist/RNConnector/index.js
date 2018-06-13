@@ -18,8 +18,6 @@ var _Connector2 = require('rn-noname-connector/src/Connector');
 
 var _Connector3 = _interopRequireDefault(_Connector2);
 
-var _constants = require('../constants.json');
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -31,6 +29,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 // If you are using React 0.48 or below, then you should import:
 // import EventEmitter from 'react-native/Libraries/EventEmitter/EventEmitter';
 
+
+var activatedModule = ['Networking', 'RTCEventEmitter', 'AppRegistry', 'UIManager'];
 
 var RNConnector = function (_Connector) {
   _inherits(RNConnector, _Connector);
@@ -52,12 +52,13 @@ var RNConnector = function (_Connector) {
   _createClass(RNConnector, [{
     key: 'onData',
     value: function onData(data) {
-      this.emit(this.eventName, data);
+      console.log(data);
+      // this.emit(this.eventName, data);
     }
   }], [{
     key: 'onlyActivatedModule',
     value: function onlyActivatedModule(data) {
-      return _constants.activatedModule.includes(data.module);
+      return activatedModule.includes(data.module);
     }
   }, {
     key: 'filter',
