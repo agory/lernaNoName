@@ -1,6 +1,6 @@
 {
   "name": "rn-noname",
-  "version": "0.1.9",
+  "version": "0.2.0",
   "description": "An application for debugging React-Native App",
   "main": "index.js",
   "scripts": {
@@ -20,12 +20,12 @@
     "commander": "^2.14.1",
     "express": "^4.16.2",
     "highlight.js": "^9.12.0",
+    "jss": "^9.7.0",
     "mdi-material-ui": "^5.0.0",
     "next": "^6.0.3",
     "object-sizeof": "^1.2.0",
     "opn": "^5.2.0",
     "prop-types": "^15.6.1",
-    "jss": "^9.7.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-jss": "^8.4.0",
