@@ -13,4 +13,4 @@ program
   .option('--np', 'don\'t open the application on navigator', false)
   .parse(process.argv);
 
-startServer(program.port, program.np, false);
+startServer(program.port, program.np, true);

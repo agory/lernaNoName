@@ -114,7 +114,6 @@ class Controller {
   }
 
   handleClient(socket) {
-    console.log(socket);
     Controller.onConnect('Client', socket.id);
     Observable.from(Object.values(EmitterType))
       // Get The Emitter

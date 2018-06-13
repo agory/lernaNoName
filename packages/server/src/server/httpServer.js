@@ -3,12 +3,23 @@ const express = require('express');
 const next = require('next');
 const open = require('opn');
 const http = require('http');
+const path = require('path');
+const fs = require('fs');
+const config = require('../../next.config');
 const {
   Controller, ModuleContainer, EmitterContainer, MiddlewareContainer,
 } = require('rn-noname-lib');
 const SocketServer = require('./SocketServer/index');
 
+
 const startServer = async (port, noPage, dev = true) => {
+  const root = path.normalize(`${__dirname}/../..`);
+
+  if (!fs.existsSync(`${root}/.next`)) {
+    throw new Error(`${root}/.next doesn't exist`);
+  }
+
+
   const SERVER_ADRESS = `http://localhost:${port}`;
   const serverHandler = (err) => {
     if (err) throw err;
@@ -19,7 +30,7 @@ const startServer = async (port, noPage, dev = true) => {
   try {
     const app = express();
     const server = http.Server(app);
-    const nextjs = next({ dev: dev });
+    const nextjs = next({ dev, dir: root, conf: config });
     const handle = nextjs.getRequestHandler();
     const socketServer = new SocketServer(server);
     const moduleContainer = new ModuleContainer();
