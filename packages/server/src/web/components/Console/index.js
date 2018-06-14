@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import List from '../List/index';
+import List from '../List';
 
 const listStyle = height => ({
   padding: '0',
   overflowY: 'auto',
   height,
+  wordBreak: 'break-all',
 });
 const Console = ({ data, ComponentLine, height }) => (
   <List data={data} Component={ComponentLine} style={listStyle(height)} />

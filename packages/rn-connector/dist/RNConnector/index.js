@@ -52,8 +52,7 @@ var RNConnector = function (_Connector) {
   _createClass(RNConnector, [{
     key: 'onData',
     value: function onData(data) {
-      console.log(data);
-      // this.emit(this.eventName, data);
+      this.emit(this.eventName, data);
     }
   }], [{
     key: 'onlyActivatedModule',
@@ -71,7 +70,7 @@ var RNConnector = function (_Connector) {
       var connector = new RNConnector(config);
       var emitter = new _EventEmitter2.default();
       var obs = _rnSnoopy2.default.stream(emitter);
-      return obs.bufferTime(1000).subscribe(connector.onData);
+      return RNConnector.filter(obs).bufferTime(1000).subscribe(connector.onData);
     }
   }]);
 

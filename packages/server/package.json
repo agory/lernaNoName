@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "NODE_ENV=production next build",
-    "serve": "node ./src/cli/index --np",
+    "serve": "node server.js",
     "test": "jest --coverage",
     "format": "prettier-eslint --write \"pages/**/*.js\" && prettier-eslint --write \"src/**/*.js\" && prettier-eslint --write \"stories/**/*.js\"",
     "lint": "eslint ./src && eslint ./pages",
