@@ -8,7 +8,7 @@ import { LanguageJavascript, Cellphone } from 'mdi-material-ui';
 import HighlightVariableText from '../../../components/HighlightVariableText/index';
 
 const listItemStyle = {
-  padding: '0 200px 0 5px',
+  padding: '0 160px 0 5px',
   border: '1px solid rgb(240,240,240)',
 };
 
@@ -22,7 +22,7 @@ const BridgeLine = ({
 }) => (
   <ListItem style={listItemStyle} >
     <ListItemIcon>
-      {type === 0 ? <LanguageJavascript style={iconJs} /> : <Cellphone style={icon} />}
+      {type === 1 ? <LanguageJavascript style={iconJs} /> : <Cellphone style={icon} />}
     </ListItemIcon>
     <ListItemText disableTypography style={size}>
       <HighlightVariableText value={args} />

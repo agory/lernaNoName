@@ -1,16 +1,19 @@
-/* eslint-disable class-methods-use-this */
+const { socketUrlFilter } = require('../../utils/filters');
+
 const RULES = [
   data =>
     !(
-      data.module === 'Networking' && data.args[1].includes('http://192.168.1.149:3000/socket.io/')
+      data.module === 'Networking' && socketUrlFilter(data.args[1])
     ),
 ];
 
-class ArraySplitterMiddleware {
+class PurifyMiddleware {
   static check(data) { return RULES.every(rule => rule(data)); }
+
+  /* eslint-disable class-methods-use-this */
   handle(observable) {
-    return observable.filter(ArraySplitterMiddleware.check);
+    return observable.filter(PurifyMiddleware.check);
   }
 }
-module.exports = ArraySplitterMiddleware;
+module.exports = PurifyMiddleware;
 module.exports.rules = RULES;
