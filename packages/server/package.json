@@ -1,6 +1,6 @@
 {
   "name": "rn-noname",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "An application for debugging React-Native App",
   "main": "index.js",
   "scripts": {
@@ -31,7 +31,7 @@
     "react-jss": "^8.4.0",
     "react-syntax-highlighter": "^7.0.4",
     "rn-noname-connector": "^0.1.7",
-    "rn-noname-lib": "^0.1.9",
+    "rn-noname-lib": "^0.2.5",
     "rn-snoopy": "^2.0.2",
     "rxjs": "^6.1.0",
     "rxjs-compat": "^6.1.0",
